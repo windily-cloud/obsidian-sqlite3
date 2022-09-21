@@ -8,6 +8,10 @@ Currently the linkage between obsidian and zotero requires the use of zotero's B
 
 At the same time, obsidian has all the data in the md file, which is perfect. But I would like to link with other software like zotero, sioyek, notion, etc. that use sqlite3 as data storage. Through the api exposed by this plugin, other developers can easily call other software's database. In fact, I would like obsidian to integrate this feature to give ob more ways to store data, so as not to pollute the md file at the same time, bringing more possibilities. The work I did was trivial, just exposing two functions of better-sqlite3.
 
+**Why not integrate the better-sqlite3 library into a functional plugin?**
+
+Because this library is not like other plugins, `npm install` and that's it. For developers, you need to install the `node gyp` build environment, python, MS2022, .net tools, and a bunch of unknown errors. This can be a very annoying thing for windows development. I don't want to have to do it again, how nice for other developers to call it directly.
+
 # Install
 
 ## From Obsidian
