@@ -2,7 +2,6 @@ import typescript from '@rollup/plugin-typescript';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import replace from "rollup-plugin-re"
-import path from "path"
 
 const patchStr = `
   const libPath = app.vault.adapter.getFullPath(app.vault.configDir)
@@ -17,7 +16,6 @@ export default {
     format: 'cjs',
     exports: 'default',
   },
-  onwarn,
   external: ['obsidian'],
   plugins: [
     typescript(),
