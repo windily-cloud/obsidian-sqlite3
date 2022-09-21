@@ -3,7 +3,7 @@
 	"name": "obsidian-sqlite3",
 	"version": "0.0.1",
 	"minAppVersion": "0.15.0",
-	"description": "Use better-sqlite3 to give obisidian the ability to manipulate sqlite3 databases",
+	"description": "Use better-sqlite3 to give obsidian the ability to manipulate sqlite3 databases",
 	"author": "windily-cloud",
 	"authorUrl": "",
 	"isDesktopOnly": true
