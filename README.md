@@ -18,7 +18,7 @@ At the same time, obsidian has all the data in the md file, which is perfect. Bu
 4. Search for this plugin
 5. Click Install
 6. Once installed, enable the plugin and close the community plugins window.
-7. Go to [plguin assets page](https://github.com/windily-cloud/obsidian-sqlite3/tree/master/assets), download the corresponding better_sqlite3.node file.
+7. Go to [plugin assets page](https://github.com/windily-cloud/obsidian-sqlite3/tree/master/assets), download the corresponding better_sqlite3.node file.
 8. Copy better-sqlite3 file to the path ".obsidian/".
 
 Tips:
