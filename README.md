@@ -10,7 +10,7 @@ At the same time, obsidian has all the data in the md file, which is perfect. Bu
 
 **Why not integrate the better-sqlite3 library into a functional plugin?**
 
-Because this library is not like other plugins, `npm install` and that's it. For developers, you need to install the `node gyp` build environment, python, MS2022, .net tools, and a bunch of unknown errors. This can be a very annoying thing for windows development. I don't want to have to do it again, how nice for other developers to call it directly.
+Because this library is not like other plugins, `npm install` and that's it. For developers, you need to install the `node gyp` build environment, python, MS2022, .net tools, and a bunch of unknown errors. In particular, the binding.js of better-sqlite3 should be modified when packaging. This can be a very annoying thing for windows development. I don't want to have to do it again, how nice for other developers to call it directly.
 
 # Install
 
