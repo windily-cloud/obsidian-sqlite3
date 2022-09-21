@@ -1,0 +1,27 @@
+{
+  "name": "obsidian-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rollup --config rollup.config.js -w --context window",
+    "build": "rollup --config rollup.config.js --context window"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@types/better-sqlite3": "^7.6.0",
+    "obsidian": "^0.16.3",
+    "rollup": "^2.79.0",
+    "rollup-plugin-re": "^1.0.7",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^7.6.2"
+  }
+}
