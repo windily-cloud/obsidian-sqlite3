@@ -12,27 +12,27 @@ At the same time, obsidian has all the data in the md file, which is perfect. Bu
 
 ## From Obsidian
 
-1. Open Settings > Third-party plugin
-2. Make sure Safe mode is off
-3. Click Browse community plugins
-4. Search for this plugin
-5. Click Install
+1. Open Settings > Third-party plugin.
+2. Make sure Safe mode is off.
+3. Click Browse community plugins.
+4. Search for this plugin.
+5. Click Install.
 6. Once installed, enable the plugin and close the community plugins window.
-7. Go to [plugin assets page](https://github.com/windily-cloud/obsidian-sqlite3/tree/master/assets), download the corresponding better_sqlite3.node file.
-8. Copy better-sqlite3 file to the path ".obsidian/".
+7. Go to [plugin assets page](https://github.com/windily-cloud/obsidian-sqlite3/tree/master/assets), download the corresponding better_sqlite3.node zip file and unzip this file.
+8. Copy better-sqlite3.node file into the path ".obsidian/".
 
 Tips:
 
-- For Mac: 103-darwin-arm64.zip
-- For Linux: 103-linux-x64.zip
-- For windows: 103-win32-x64
+- For Mac: 103-darwin-arm64.zip.
+- For Linux: 103-linux-x64.zip.
+- For windows: 103-win32-x64.zip.
 
-If you need another compiled version, please download it from the [better-sqlite3 repo](https://github.com/WiseLibs/better-sqlite3/releases/tag/v7.6.2)
+If you need another compiled version, please download it from the [better-sqlite3 repo](https://github.com/WiseLibs/better-sqlite3/releases/tag/v7.6.2).
 
 ## From GitHub
 
-1. Download the Latest Release from the Releases section of the GitHub Repository
-2. Put files to your vault's plugins folder: <vault>/.obsidian/plugins/media-extended
-3. Reload Obsidian
+1. Download the Latest Release from the Releases section of the GitHub Repository.
+2. Put files to your vault's plugins folder: `.obsidian/plugins/obsidain-sqlite3`
+3. Reload Obsidian.
 4. If prompted about Safe Mode, you can disable safe mode and enable the plugin. Otherwise, head to Settings, third-party plugins, make sure safe mode is off and enable the plugin from there.
 
