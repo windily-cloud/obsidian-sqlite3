@@ -1,8 +1,10 @@
 import { Plugin } from 'obsidian'
 import Database from 'better-sqlite3'
+import { SqliteError } from 'better-sqlite3'
 
 export default class SqliteDatabase extends Plugin {
   SqliteDatabase: (sqlitePath: string, options: any) => any
+  SqliteError: SqliteError
   async onload(): Promise<void> {
     console.log('loading sample plugin...')
 
