@@ -1,6 +1,7 @@
 import typescript from '@rollup/plugin-typescript';
 import replace from "rollup-plugin-re"
-
+import {nodeResolve} from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 const patchStr = `
   const libPath = app.vault.adapter.getFullPath(app.vault.configDir)
   addon = DEFAULT_ADDON || (DEFAULT_ADDON = require(path.resolve(libPath, "better_sqlite3.node")));
@@ -17,6 +18,8 @@ export default {
   external: ['obsidian'],
   plugins: [
     typescript(),
+    nodeResolve({browser: true}),
+    commonjs(),
     replace({
       patterns: [
         {
