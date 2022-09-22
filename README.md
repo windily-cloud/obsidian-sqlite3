@@ -10,13 +10,40 @@ At the same time, obsidian has all the data in the md file, which is perfect. Bu
 
 **Why not integrate the better-sqlite3 library into a functional plugin?**
 
-Because this library is not like other plugins, `npm install` and that's it. For developers, you need to install the `node gyp` build environment, python, MS2022, .net tools, and a bunch of unknown errors. In particular, the binding.js of better-sqlite3 should be modified when packaging. This can be a very annoying thing for windows development. I don't want to have to do it again, how nice for other developers to call it directly.
+Because this library is not like other libaray, `npm install` and that's it. For developers, you need to install the `node gyp` build environment, python, MS2022, .net tools, and a bunch of unknown errors. In particular, the binding.js of better-sqlite3 should be modified when packaging. This can be a very annoying thing for windows development. I don't want to have to do it again, how nice for other developers to call it directly.
 
 **So what is the use of this plugin?**
 
 - Linking with other software that uses sqlite.
 - Store some dirty persistent data, such as the hash of each note, pollute md generic syntax of other syntax, etc.
 - Store things that are not easy to write in md, or don't want to write in md format, such as bookmarks, time tracker, etc.
+
+# Usage
+
+## Use default database
+
+This plugin will create `obsidian.db` in the `.obsidian` directory by default, which is the default sqlite file. You can get an instance of this database through the api:
+
+```js
+//Get the instanse of default database
+const db = app.plugins.getPlugin["obsidian-sqlite3"].getDefaultDb()
+
+//Some operations on the database
+
+//close database
+db.close()
+
+```
+
+You can also create your own sqlite3 database file or get other software's sqlite3 file:
+
+```js
+const db = app.plugins.getPlugin["obsidian-sqlite3"].initDatabase("D:/temp/custom-db.db", { verbose: console.log })
+
+db.close()
+```
+
+Then you can read the [better-sqlite3 api doc](https://github.com/WiseLibs/better-sqlite3/blob/master/docs/api.md), do anything you want.
 
 # Install
 
