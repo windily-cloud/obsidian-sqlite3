@@ -12,6 +12,12 @@ At the same time, obsidian has all the data in the md file, which is perfect. Bu
 
 Because this library is not like other plugins, `npm install` and that's it. For developers, you need to install the `node gyp` build environment, python, MS2022, .net tools, and a bunch of unknown errors. In particular, the binding.js of better-sqlite3 should be modified when packaging. This can be a very annoying thing for windows development. I don't want to have to do it again, how nice for other developers to call it directly.
 
+**So what is the use of this plugin?**
+
+- Linking with other software that uses sqlite.
+- Store some dirty persistent data, such as the hash of each note, pollute md generic syntax of other syntax, etc.
+- Store things that are not easy to write in md, or don't want to write in md format, such as bookmarks, time tracker, etc.
+
 # Install
 
 ## From Obsidian
@@ -39,4 +45,6 @@ If you need another compiled version, please download it from the [better-sqlite
 2. Put files to your vault's plugins folder: `.obsidian/plugins/obsidain-sqlite3`
 3. Reload Obsidian.
 4. If prompted about Safe Mode, you can disable safe mode and enable the plugin. Otherwise, head to Settings, third-party plugins, make sure safe mode is off and enable the plugin from there.
+5. Go to [plugin assets page](https://github.com/windily-cloud/obsidian-sqlite3/tree/master/assets), download the corresponding better_sqlite3.node zip file and unzip this file.
+8. Copy better-sqlite3.node file into the path ".obsidian/".
 
