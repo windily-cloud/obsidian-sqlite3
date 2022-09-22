@@ -6,7 +6,7 @@ Use better-sqlite3 to give obisidian the ability to manipulate sqlite3 databases
 
 Currently the linkage between obsidian and zotero requires the use of zotero's Better BibTeX for Zotero plugin, which is a inelegant way. Wouldn't it be nice if I could access zotero's database directly?
 
-At the same time, obsidian has all the data in the md file, which is perfect. But I would like to link with other software like zotero, sioyek, notion, etc. that use sqlite3 as data storage. Through the api exposed by this plugin, other developers can easily call other software's database. In fact, I would like obsidian to integrate this feature to give ob more ways to store data, so as not to pollute the md file at the same time, bringing more possibilities. The work I did was trivial, just exposing two functions of better-sqlite3.
+At the same time, obsidian has all the data in the md file, which is perfect. But I would like to link with other software like zotero, sioyek, notion, sticky note etc. that use sqlite3 as data storage. Through the api exposed by this plugin, other developers can easily call other software's database. In fact, I would like obsidian to integrate this feature to give ob more ways to store data, so as not to pollute the md file at the same time, bringing more possibilities. The work I did was trivial, just exposing two functions of better-sqlite3.
 
 **Why not integrate the better-sqlite3 library into a functional plugin?**
 
@@ -34,6 +34,7 @@ const db = app.plugins.getPlugin["obsidian-sqlite3"].getDefaultDb()
 db.close()
 
 ```
+## Use other database
 
 You can also create your own sqlite3 database file or get other software's sqlite3 file:
 
